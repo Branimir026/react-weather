@@ -19,20 +19,14 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [city, setCity] = useState("New York, US");
   const [apiResult, setApiResult] = useState({});
-  const [apiError, setApiError] = useState(null);
 
   const getWeather = useCallback(() => {
     fetch(`${api.base}${city}&units=metric&appid=${api.key}`)
       .then((res) => res.json())
-      .then(
-        (result) => {
-          setApiResult(result);
-          console.log(result);
-        },
-        (error) => {
-          setApiError(error);
-        }
-      );
+      .then((result) => {
+        setApiResult(result);
+        console.log(result);
+      });
   }, [city]);
 
   useEffect(() => {
