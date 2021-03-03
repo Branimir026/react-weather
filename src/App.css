@@ -1,38 +1,86 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 5vh 5vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 90vw;
+  height: 90vh;
+}
+
+.app {
   text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(rgb(255, 169, 136), rgb(231, 127, 86));
+  border-radius: 20px;
+  box-shadow: 0.5vw 3vh 5px;
+  padding-bottom: 2vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  padding: 5vh 0px;
+  color: white;
+  font-size: 5rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  padding: 3vh 2vh;
+  color: white;
+  font-size: 2.5rem !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchBox {
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
+.searchInputBox,
+.searchButtonBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: stretch;
+}
+
+/*.searchInput,
+.searchButton {
+  height: 100% !important;
+}*/
+
+.alert {
+  margin-bottom: 0px !important;
+}
+
+.location,
+.date,
+.temperature,
+.weather {
+  background-color: rgba(26, 22, 22, 0.233) !important;
+  border: 2px solid rgb(26, 22, 22);
+  border-radius: 7px;
+  margin-bottom: 2vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.date {
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temperature {
+  font-size: 3rem;
+}
+
+.loading {
+  color: white;
+  font-size: 3rem;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
 }
