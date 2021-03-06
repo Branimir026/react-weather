@@ -25,7 +25,6 @@ function App() {
       .then((res) => res.json())
       .then((result) => {
         setApiResult(result);
-        console.log(result);
       });
   }, [city]);
 
@@ -42,16 +41,8 @@ function App() {
           setInputText={setInputText}
           setCity={setCity}
         />
-        {typeof apiResult.main != "undefined" ? (
-          <div>
-            <LocationBox apiResult={apiResult} />
-            <TemperatureBox apiResult={apiResult} />
-          </div>
-        ) : typeof apiResult.message != "undefined" ? (
-          <Error apiResult={apiResult} />
-        ) : (
-          <Loading />
-        )}
+        <LocationBox apiResult={apiResult} />
+        <TemperatureBox apiResult={apiResult} />
       </Container>
     </div>
   );

@@ -47,7 +47,9 @@ function LocationBox({ apiResult }) {
           xs={{ span: 12, offset: 0 }}
           className="location"
         >
-          <Alert>{apiResult.name}</Alert>
+          <Alert className={apiResult.message ? "error" : ""}>
+            {apiResult.name || apiResult.message || "Loading..."}
+          </Alert>
         </Col>
         <Col
           lg={{ span: 4, offset: 4 }}

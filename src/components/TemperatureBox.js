@@ -14,14 +14,26 @@ function TemperatureBox({ apiResult }) {
           xs={{ span: 8, offset: 2 }}
           className="temperature"
         >
-          <Alert>{Math.round(apiResult.main.temp)} °C</Alert>
+          {
+            <Alert>
+              {(apiResult.main !== undefined &&
+                Math.round(apiResult.main.temp)) ||
+                "--"}
+              °C
+            </Alert>
+          }
         </Col>
         <Col
           lg={{ span: 2, offset: 5 }}
           xs={{ span: 6, offset: 3 }}
           className="weather"
         >
-          <Alert>{apiResult.weather[0].main}</Alert>
+          {
+            <Alert>
+              {(apiResult.weather !== undefined && apiResult.weather[0].main) ||
+                "--"}
+            </Alert>
+          }
         </Col>
       </Row>
     </div>
