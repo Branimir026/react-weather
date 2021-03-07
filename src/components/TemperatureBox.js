@@ -16,7 +16,7 @@ function TemperatureBox({ mainTemp, minTemp, maxTemp, stringWeather }) {
         >
           {
             <Alert>
-              {mainTemp}
+              {Math.round(mainTemp)}
               °C
             </Alert>
           }
@@ -28,8 +28,8 @@ function TemperatureBox({ mainTemp, minTemp, maxTemp, stringWeather }) {
         >
           {
             <Alert>
-              {minTemp}
-              °C
+              {Math.round(minTemp)}
+              °C MIN
             </Alert>
           }
         </Col>
@@ -40,8 +40,8 @@ function TemperatureBox({ mainTemp, minTemp, maxTemp, stringWeather }) {
         >
           {
             <Alert>
-              {maxTemp}
-              °C
+              {Math.round(maxTemp)}
+              °C MAX
             </Alert>
           }
         </Col>
