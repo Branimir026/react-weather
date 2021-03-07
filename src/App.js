@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 
 const api = {
-  key: "7c65b73889e71f8242cc2cfdca0bb056",
+  key: process.env.REACT_APP_WEATHER_API_KEY,
   base: "https://api.openweathermap.org/data/2.5/weather?q=",
 };
 
