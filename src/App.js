@@ -41,8 +41,20 @@ function App() {
           setInputText={setInputText}
           setCity={setCity}
         />
-        <LocationBox apiResult={apiResult} />
-        <TemperatureBox apiResult={apiResult} />
+        {(apiResult.main !== undefined && (
+          <div>
+            <LocationBox cityName={apiResult.name} />
+            <TemperatureBox
+              mainTemp={apiResult.main.temp}
+              minTemp={apiResult.main.temp_min}
+              maxTemp={apiResult.main.temp_max}
+              stringWeather={apiResult.weather[0].main}
+            />
+          </div>
+        )) ||
+          (apiResult.message !== undefined && (
+            <Error message={apiResult.message} />
+          )) || <Loading />}
       </Container>
     </div>
   );

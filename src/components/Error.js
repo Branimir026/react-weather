@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 
-function Loading({ apiResult }) {
+function Loading({ message }) {
   return (
     <div>
       <Row>
@@ -14,7 +14,7 @@ function Loading({ apiResult }) {
           lg={{ span: 6, offset: 3 }}
           xs={{ span: 8, offset: 2 }}
         >
-          <Alert>{apiResult.message}</Alert>
+          <Alert>{message}</Alert>
         </Col>
       </Row>
     </div>

@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 
-function TemperatureBox({ apiResult }) {
+function TemperatureBox({ mainTemp, minTemp, maxTemp, stringWeather }) {
   return (
     <div>
       <Row>
@@ -16,9 +16,7 @@ function TemperatureBox({ apiResult }) {
         >
           {
             <Alert>
-              {(apiResult.main !== undefined &&
-                Math.round(apiResult.main.temp)) ||
-                "--"}
+              {mainTemp}
               °C
             </Alert>
           }
@@ -30,10 +28,29 @@ function TemperatureBox({ apiResult }) {
         >
           {
             <Alert>
-              {(apiResult.weather !== undefined && apiResult.weather[0].main) ||
-                "--"}
+              {minTemp}
+              °C
             </Alert>
           }
+        </Col>
+        <Col
+          lg={{ span: 2, offset: 5 }}
+          xs={{ span: 6, offset: 3 }}
+          className="weather"
+        >
+          {
+            <Alert>
+              {maxTemp}
+              °C
+            </Alert>
+          }
+        </Col>
+        <Col
+          lg={{ span: 2, offset: 5 }}
+          xs={{ span: 6, offset: 3 }}
+          className="weather"
+        >
+          {<Alert>{stringWeather}</Alert>}
         </Col>
       </Row>
     </div>

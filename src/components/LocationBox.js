@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 
-function LocationBox({ apiResult }) {
+function LocationBox({ cityName }) {
   const getCurrentDate = (d) => {
     let months = [
       "January",
@@ -47,9 +47,7 @@ function LocationBox({ apiResult }) {
           xs={{ span: 12, offset: 0 }}
           className="location"
         >
-          <Alert className={apiResult.message ? "error" : ""}>
-            {apiResult.name || apiResult.message || "Loading..."}
-          </Alert>
+          <Alert>{cityName}</Alert>
         </Col>
         <Col
           lg={{ span: 4, offset: 4 }}
