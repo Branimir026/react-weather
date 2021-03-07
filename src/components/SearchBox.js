@@ -3,7 +3,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
 
 function SearchBox({ inputText, setCity, setInputText }) {
@@ -12,40 +11,29 @@ function SearchBox({ inputText, setCity, setInputText }) {
     setInputText(e.target.value);
   };
 
-  const searchHandler = (e) => {
-    e.preventDefault();
-    setCity(inputText);
-    setInputText("");
+  const handleKeyPress = (e) => {
+    console.log(e);
+    if (e.key === "Enter") {
+      setCity(inputText);
+      setInputText("");
+    }
   };
 
   return (
     <div>
       <Row className="searchBox">
         <Col
-          lg={{ span: 5, offset: 3 }}
+          lg={{ span: 6, offset: 3 }}
           xs={{ span: 12, offset: 0 }}
           className="searchInputBox"
         >
           <FormControl
             className="searchInput"
-            placeholder="Search.."
+            placeholder="Search and press enter.."
             aria-label="Search"
             onChange={inputTextHandler}
-            value={inputText}
+            onKeyPress={handleKeyPress}
           />
-        </Col>
-        <Col
-          lg={{ span: 1, offset: 0 }}
-          xs={{ span: 4, offset: 4 }}
-          className="searchButtonBox"
-        >
-          <Button
-            className="searchButton"
-            variant="primary"
-            onClick={searchHandler}
-          >
-            Search
-          </Button>
         </Col>
       </Row>
     </div>
