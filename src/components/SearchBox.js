@@ -21,14 +21,10 @@ function SearchBox({ inputText, setCity, setInputText }) {
 
   return (
     <div>
-      <Row className="searchBox">
-        <Col
-          lg={{ span: 6, offset: 3 }}
-          xs={{ span: 12, offset: 0 }}
-          className="searchInputBox"
-        >
+      <Row>
+        <Col>
           <FormControl
-            className="searchInput"
+            className="searchBox"
             placeholder="Search and press enter.."
             aria-label="Search"
             onChange={inputTextHandler}

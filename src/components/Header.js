@@ -7,19 +7,11 @@ import Col from "react-bootstrap/Col";
 function Header() {
   return (
     <div>
-      <Row className="header">
-        <Col
-          lg={{ span: 6, offset: 3 }}
-          xs={{ span: 12, offset: 0 }}
-          className="header1"
-        >
+      <Row>
+        <Col>
           <h1>Weather app</h1>
         </Col>
-        <Col
-          lg={{ span: 6, offset: 3 }}
-          xs={{ span: 12, offset: 0 }}
-          className="header2"
-        >
+        <Col>
           <h2>Enter city you want to check weather for</h2>
         </Col>
       </Row>

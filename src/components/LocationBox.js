@@ -40,22 +40,12 @@ function LocationBox({ cityName }) {
   };
 
   return (
-    <div>
-      <Row>
-        <Col
-          lg={{ span: 6, offset: 3 }}
-          xs={{ span: 12, offset: 0 }}
-          className="location"
-        >
-          <Alert>{cityName}</Alert>
-        </Col>
-        <Col
-          lg={{ span: 4, offset: 4 }}
-          xs={{ span: 8, offset: 2 }}
-          className="date"
-        >
-          <Alert>{getCurrentDate(new Date())}</Alert>
-        </Col>
+    <div className="header">
+      <Row className="cityName">
+        <Alert>{cityName}</Alert>
+      </Row>
+      <Row className="date">
+        <Alert>{getCurrentDate(new Date())}</Alert>
       </Row>
     </div>
   );
