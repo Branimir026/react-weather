@@ -22,7 +22,7 @@ function TemperatureBox({
           <Row className="mainTempBox">
             <Col lg={6} xs={12} className="iconImg">
               <Image
-                src={`http://openweathermap.org/img/wn/${iconId}@2x.png`}
+                src={`https://openweathermap.org/img/wn/${iconId}@2x.png`}
               />
             </Col>
             <Col lg={6} xs={12} className="temp">
