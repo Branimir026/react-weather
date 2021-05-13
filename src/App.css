@@ -90,7 +90,7 @@
 .mainTempBox,
 .statsTemp {
   margin-top: 3vh;
-  margin-bottom: 3vh;
+  padding-bottom: 5vh;
 }
 
 .loading {
