@@ -87,6 +87,12 @@
   background-position: center;
 }
 
+.mainTempBox,
+.statsTemp {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
 .loading {
   color: gray;
   font-size: 3rem;
