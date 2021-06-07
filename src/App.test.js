@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+/*import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("inputs and renders london", async () => {
+  const input = await waitFor(() =>
+    screen.queryByPlaceholderText(/search and press enter.../i)
+  );
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+  userEvent.type(input, "London{enter}");
+  const addedElement = await waitFor(() => screen.getByText("London"));
+  expect(addedElement).toHaveTextContent("London");
+});*/

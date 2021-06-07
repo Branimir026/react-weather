@@ -1,5 +1,7 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Weather app
+## Simple Weather app
+
+Simple weather app made for learning and understanding react hooks and api calls
+
+You can try it [here](https://branimir026.github.io/react-weather/)
