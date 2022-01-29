@@ -40,7 +40,7 @@ function App() {
     navigator.geolocation.getCurrentPosition(function (position) {
       setCoordinates([position.coords.latitude, position.coords.longitude]);
       fetch(
-        `http://api.openweathermap.org/geo/1.0/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&limit=1&appid=${api.key}`
+        `https://api.openweathermap.org/geo/1.0/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&limit=1&appid=${api.key}`
       )
         .then((res) => res.json())
         .then((result) => {
