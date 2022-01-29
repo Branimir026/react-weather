@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 .app {
@@ -15,24 +16,52 @@
 
 .searchBox {
   min-height: 5vh !important;
+  margin-top: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .alert {
   margin: 0px !important;
 }
 
+.link {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.link .btn {
+  margin: 0px 2px;
+  width: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.link a,
+.link a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .header {
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 .cityName {
   padding-top: 10vh;
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(58, 58, 58);
+  text-shadow: 2px 4px 2px #969697;
 }
 
-.date {
-  font-size: 2rem;
-  font-style: italic;
+.cityName > .alert {
+  width: 100%;
+}
+
+.tempInfo {
+  align-items: center;
 }
 
 .temperatureBox {
@@ -41,43 +70,74 @@
   text-align: center;
   background-color: #ffffff57;
   border-radius: 8px;
-  font-size: 3rem;
-}
-
-.temperatureBox p {
-  font-size: 1rem !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: rgb(58, 58, 58);
 }
 
 .mainTempBox,
 .statsTemp {
-  height: 100% !important;
+  height: fit-content;
   justify-content: center;
   align-items: center;
 }
 
 .iconImg {
   display: block;
-  margin: auto !important;
+  margin: auto;
+  align-self: center;
 }
 
 .iconImg > img {
-  background-color: #6868689d;
+  background-color: rgba(255, 255, 255, 0.158);
   border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 13px -5px,
+    rgba(0, 0, 0, 0.3) 0px 4px 8px -8px;
+}
+
+.currentDay {
+  font-size: 1.2rem;
+  padding-top: 0px !important;
+  width: 100%;
+}
+
+.currentDate {
+  font-size: 1rem;
+  padding-top: 0px !important;
+  width: 100%;
 }
 
 .temp {
   height: 100%;
-  display: flex;
+  width: 100%;
   align-items: center;
 }
 
 .stringTempBox {
   width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainTemp {
+  font-size: 3rem;
+}
+
+.stringTempBox > .col {
+  width: 100%;
+}
+
+.stringWeather {
+  font-size: 1.8rem;
 }
 
 .mainTemp,
 .stringWeather {
   width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  align-items: center;
 }
 
 .cold {
@@ -91,6 +151,23 @@
 .statsTemp {
   margin-top: 3vh;
   padding-bottom: 5vh;
+}
+
+.statsTemp p {
+  font-size: 0.85rem;
+}
+
+.statsTemp > div {
+  padding: 0px 50px;
+}
+
+.statsTemp .alert {
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+hr {
+  margin-bottom: 0px;
 }
 
 .loading {
