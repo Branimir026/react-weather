@@ -23,7 +23,7 @@ function SearchBox({
     }
     if (e.key === "Enter") {
       fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${inputText}&limit=1&appid=7c65b73889e71f8242cc2cfdca0bb056`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${inputText}&limit=1&appid=7c65b73889e71f8242cc2cfdca0bb056`
       )
         .then((res) => res.json())
         .then((result) => {
