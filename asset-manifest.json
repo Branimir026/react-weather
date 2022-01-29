@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-weather/static/css/main.3cad6c9a.chunk.css",
-    "main.js": "/react-weather/static/js/main.95c23c01.chunk.js",
-    "main.js.map": "/react-weather/static/js/main.95c23c01.chunk.js.map",
+    "main.css": "/react-weather/static/css/main.7be472bd.chunk.css",
+    "main.js": "/react-weather/static/js/main.cb8a1870.chunk.js",
+    "main.js.map": "/react-weather/static/js/main.cb8a1870.chunk.js.map",
     "runtime-main.js": "/react-weather/static/js/runtime-main.88882706.js",
     "runtime-main.js.map": "/react-weather/static/js/runtime-main.88882706.js.map",
     "static/css/2.150d169a.chunk.css": "/react-weather/static/css/2.150d169a.chunk.css",
-    "static/js/2.fd4c82de.chunk.js": "/react-weather/static/js/2.fd4c82de.chunk.js",
-    "static/js/2.fd4c82de.chunk.js.map": "/react-weather/static/js/2.fd4c82de.chunk.js.map",
+    "static/js/2.33268519.chunk.js": "/react-weather/static/js/2.33268519.chunk.js",
+    "static/js/2.33268519.chunk.js.map": "/react-weather/static/js/2.33268519.chunk.js.map",
     "index.html": "/react-weather/index.html",
     "static/css/2.150d169a.chunk.css.map": "/react-weather/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.3cad6c9a.chunk.css.map": "/react-weather/static/css/main.3cad6c9a.chunk.css.map",
-    "static/js/2.fd4c82de.chunk.js.LICENSE.txt": "/react-weather/static/js/2.fd4c82de.chunk.js.LICENSE.txt",
+    "static/css/main.7be472bd.chunk.css.map": "/react-weather/static/css/main.7be472bd.chunk.css.map",
+    "static/js/2.33268519.chunk.js.LICENSE.txt": "/react-weather/static/js/2.33268519.chunk.js.LICENSE.txt",
     "static/media/App.css": "/react-weather/static/media/warmBackground.c94ea1c9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.88882706.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.fd4c82de.chunk.js",
-    "static/css/main.3cad6c9a.chunk.css",
-    "static/js/main.95c23c01.chunk.js"
+    "static/js/2.33268519.chunk.js",
+    "static/css/main.7be472bd.chunk.css",
+    "static/js/main.cb8a1870.chunk.js"
   ]
 }
