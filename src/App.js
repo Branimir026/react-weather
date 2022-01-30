@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import SearchBox from "./components/SearchBox";
 import LocationBox from "./components/LocationBox";
 import Current from "./components/Current";
@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div className={`app ${isCold ? "cold" : ""}`}>
-      <BrowserRouter basename="/react-weather">
+      <HashRouter>
         <Container>
           <SearchBox
             inputText={inputText}
@@ -111,7 +111,7 @@ function App() {
             </div>
           )) || <Loading />}
         </Container>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
